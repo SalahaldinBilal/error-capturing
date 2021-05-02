@@ -1,0 +1,24 @@
+{
+  "name": "capture",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/browser": "^6.3.0",
+    "capture-console": "^1.0.1",
+    "uncaught": "0.0.5"
+  },
+  "devDependencies": {
+    "crypto-browserify": "^3.12.0",
+    "webpack": "^5.35.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

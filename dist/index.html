@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+<body>
+  <script>
+    eval("}")
+  </script>
+    <div>
+        <button onclick="log()">log</button>
+        <button onclick="error()">error</button>
+        <button onclick="syntaxError()">syntax error</button>
+        <button onclick="apendErrorImage()">bad image</button>
+        <button onclick="exception()">exception</button>
+        <button id="stop">stop listener</button>
+        <button id="untrack">untrack</button>
+        <img src="image.png" alt="not here !" id="img">
+        <br>
+        <input type="text" id="input">
+    </div>
+    <script>
+        function log(){
+            console.log("log test");
+        }
+        function error(){
+            console.error("error test");
+        }
+        function syntaxError(){
+          eval(document.getElementById("input").value);
+        }
+        function apendErrorImage(){
+          document.body.append(document.getElementById("img").cloneNode());
+        }
+        function exception(){
+          throw 'Parameter is not a number!';
+        }
+    </script>
+</body>
+</html>
